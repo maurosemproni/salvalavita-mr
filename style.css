@@ -1,20 +1,30 @@
 body {
+    --main-grey: #918f8f;
+    --dark-grey: #6d6d6d;
+    --light-grey: #bdbdbd;
+    --button-red: #d82727;
+    --light-red: #e24a4a;
+    --dark-red: #a61c1c;
     margin: 0;
     padding: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000000;
 }
 
 .esterno {
     position: relative;
-    width: 100%;
-    height: 100%;
-    max-width: 600px;
-    max-height: 900px;
-    background-color: #918f8f;
-    border-radius: 20px;
+    aspect-ratio: 2 / 3;
+    width: min(100vw, calc(100vh * 2 / 3));
+    height: min(100vh, calc(100vw * 3 / 2));
+    background-color: var(--main-grey);
+    border-radius: 3%;
+    margin: auto;
+    overflow: hidden;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .container-righe {
@@ -23,19 +33,37 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    height: 200px;
+    height: 10%;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 4%;
 }
 
 .riga {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 2%;
     width: 100%;
-    height: 12px;
-    border-top: 4px solid #dad9d9;
-    border-bottom: 4px solid #6d6d6d;
+    height: 2%;
+    border-top: 8px solid var(--dark-grey);
+    border-bottom: 8px solid var(--light-grey);
+}
+
+.incavo-bottone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    height: 32%;
+    background-color: var(--main-grey);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 8px solid var(--dark-grey);
+    border-bottom: 8px solid var(--light-grey);
+    border-left: 2px solid var(--dark-grey);
+    border-right: 2px solid var(--dark-grey);
 }
 
 .bottone {
@@ -43,13 +71,15 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
-    background-color: #d82727;
-    border-radius: 10px;
+    width: 92%;
+    height: 92%;
+    background-color: var(--button-red);
+    border-radius: 1.5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-top: 10px solid var(--light-red);
+    border-bottom: 10px solid var(--dark-red);
 }
 
 .batteria {
@@ -57,13 +87,14 @@ body {
     bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-    width: 560px;
-    height: 200px;
-    background-color: #918f8f;
-    border-radius: 20px;
-    border-left: 5px solid #6d6d6d;
-    border-top: 5px solid #6d6d6d;
-    border-right: 5px solid #6d6d6d;
+    width: 90%;
+    height: 20%;
+    background-color: var(--main-grey);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-left: 8px solid var(--dark-grey);
+    border-top: 8px solid var(--dark-grey);
+    border-right: 8px solid var(--dark-grey);
 }
 
 .led {
@@ -71,9 +102,31 @@ body {
     top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60px;
-    height: 20px;
-    background-color: #d82727;
+    width: 10%;
+    height: 6%;
+    background-color: var(--dark-red);
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(216, 39, 39, 0.5);
+    box-shadow: 0 0 2px rgba(216, 39, 39, 0.5);
+}
+
+.riflesso-top {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+    border-radius: 3% 3% 0 0;
+}
+
+.riflesso-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.6));
+    border-radius: 0 0 3% 3%;
 }
