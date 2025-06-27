@@ -103,7 +103,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 10%;
-    height: 6%;
+    height: 7%;
     background-color: var(--dark-red);
     border-radius: 20px;
     box-shadow: 0 0 2px rgba(216, 39, 39, 0.5);
@@ -129,4 +129,9 @@ body {
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.6));
     border-radius: 0 0 3% 3%;
+}
+
+.led.attivo {
+    background-color: var(--light-red);
+    box-shadow: 0 0 2px rgba(226, 74, 74, 0.5);
 }
