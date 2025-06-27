@@ -1,0 +1,26 @@
+{
+  "name": "salvalavita-mr",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maurosemproni/salvalavita-mr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/maurosemproni/salvalavita-mr/issues"
+  },
+  "homepage": "https://github.com/maurosemproni/salvalavita-mr#readme",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
