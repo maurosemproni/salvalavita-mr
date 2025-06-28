@@ -4,5 +4,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Env file (⚠️ contiene dati sensibili come il token Telegram)
+# Env file
 .env

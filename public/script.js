@@ -23,10 +23,10 @@ function notifica() {
       fetch('/notifica')
         .then(res => {
           if (res.ok) {
-            alert('✅ Notifica inviata a Telegram!');
+            alert('✅ Richiesta di aiuto inviata!');
           } else {
-            alert('❌ Errore durante l’invio.');
+            alert('❌ Errore durante l’invio. Riprova più tardi se sei ancora in grado.');
           }
         })
-        .catch(err => alert('❌ Errore di rete: ' + err.message));
+        .catch(err => alert('❌ Errore di rete (sei spacciato mi sa): ' + err.message));
     }
