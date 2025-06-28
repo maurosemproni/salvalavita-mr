@@ -43,13 +43,13 @@ function pickNextMessage() {
     "📉 Ogni piegamento è un insulto al mio stile di vita.",
     "⚰️ Se non ce la faccio, sappiate che ho odiato ogni secondo. E che il mio ultimo desiderio è un Campari coi giri.",
     "🔞 Sto urlando mentalmente parole che non posso scrivere qui. Ma finiscono tutte con: '...e un amaro, grazie.'",
-    "🍸 Il sudore mi cola negli occhi e brucia. Come la verità, o la Tequila di bassa qualità. O qualsiasi Tequila.",
+    "🍸 Il sudore mi cola negli occhi e brucia. Come la verità. O la Tequila di bassa qualità. O qualsiasi Tequila.",
     "🍺 Ho appena fatto tre affondi e il mio spirito è uscito dal corpo. Ho bisogno di reintegrarlo.",
     "🥴 Se questo è il fitness, preferisco il coma etilico del sabato sera. Almeno lì c’era musica.",
     "🧉 Sto sudando Campari. Il mio corpo sta cercando di purificarsi e io non sono d’accordo.",
     "🍻 Ma non potevamo semplicemente bere, come tutte le cazzo di volte?",
     "🧠 Questa idea vince il premio come seconda idea più del cazzo al mondo, dopo la birra analcolica.",
-    "🏳️ Manco ci provo a chiedervi aiuto. Ma colgo questa preziosa opportunità per mandarvi affanculo",
+    "🏳️ Manco ci provo a chiedervi aiuto. Ma colgo questa preziosa opportunità per mandarvi affanculo.",
     "📉 Sto perdendo massa grassa, ed io odio perdere."
   ];
   return baseMessage + " " + messages[Math.floor(Math.random() * messages.length)];
